@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Todo from "./components/Todo";
+import Task from "./components/Task";
 import UserInfo from "./components/UserInfo";
 import { useState } from "react";
 
@@ -20,7 +20,7 @@ function App() {
         <UserInfo user={user}></UserInfo>
         
         {/* Todo list section  */}
-        <Todo></Todo>
+        <Task></Task>
       </div>
     </div>
   );

@@ -6,7 +6,7 @@
 */
 import { Button } from "react-bootstrap";
 import Edit from "./Edit";
-function TodoItem({ task, handleCheckBox, handleEdit, deleteTask }) {
+function TaskItem({ task, handleCheckBox, handleEdit, deleteTask }) {
   return (
     <div
       className={
@@ -19,20 +19,7 @@ function TodoItem({ task, handleCheckBox, handleEdit, deleteTask }) {
       }}
     >
       <div className="col-auto m-1 p-0 d-flex align-items-center">
-        {/* <h2 className="m-0 p-0">
-        <i
-          className="fa fa-square-o m-0 p-0 d-none color"
-          data-toggle="tooltip"
-          data-placement="bottom"
-          title="Mark as complete"
-        ></i>
-        <i
-          className="fa fa-check-square-o m-0 p-0 color"
-          data-toggle="tooltip"
-          data-placement="bottom"
-          title="Mark as todo"
-        ></i>
-      </h2> */}
+        
         <input
           type="checkbox"
           checked={task.done}
@@ -86,4 +73,4 @@ function TodoItem({ task, handleCheckBox, handleEdit, deleteTask }) {
   );
 }
 
-export default TodoItem;
+export default TaskItem;

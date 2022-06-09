@@ -1,14 +1,9 @@
 import React, { useState } from "react";
 import ItemPagination from "./ItemPagination";
-/* 
-  【Todoのデータ構成】
-　・key：Todoを特定するID（String）
-　・text：Todoの内容（String）
-　・done：完了状態（Boolean true:完了済み,, false:未完了）
-*/
+
 
 /* コンポーネント */
-import TodoItem from "./TodoItem";
+import TaskItem from "./TaskItem";
 import Input from "./Input";
 import Filter from "./Filter";
 import SearchBar from "./SearchBar";
@@ -17,7 +12,7 @@ import SearchBar from "./SearchBar";
 import { getKey } from "../lib/util";
 import useStorage from "../hooks/storage";
 
-function Todo() {
+function Task() {
   const [tasks, setTask] = useStorage([
     {
       text: "clean room",
@@ -179,7 +174,7 @@ function Todo() {
           
           {paginateItems.length ?   (
             paginateItems.map((task) => (
-              <TodoItem
+              <TaskItem
                 task={task}
                 key={task.key}
                 handleCheckBox={handleCheckBox}
@@ -198,4 +193,4 @@ function Todo() {
   );
 }
 
-export default Todo;
+export default Task;
