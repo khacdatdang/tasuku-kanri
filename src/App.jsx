@@ -1,7 +1,5 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Input from "./components/Input";
-import Filter from "./components/Filter";
 import Todo from "./components/Todo";
 import UserInfo from "./components/UserInfo";
 import { useState } from "react";
