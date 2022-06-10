@@ -19,15 +19,6 @@ function Input({ handleInput, task, handleClose }) {
   });
   const errorMes = "申し訳ございません、空白はだめだよ　o((>ω< ))o";
 
-  // useEffect(() => {
-
-  // }, [])
-
-  // if (task !== undefined) {
-  //   console.log(task)
-  //   setContent(task.text);
-  //   setNewDate(task.deadLine);
-  // }
   return (
     <div className="row m-1 px-5">
       <div className="col col-11 mx-auto border ">
